@@ -4,7 +4,7 @@ import {showLoading,hideLoading } from '@/utils/eloading'
 
 //创建axios实例
 const instance=axios.create({
-    baseURL:'https://mall.qzimp.cn/',
+    baseURL:'http://mall.qzimp.cn/',
     timeout:6000
 })
 //请求拦截器
