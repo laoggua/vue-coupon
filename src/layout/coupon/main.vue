@@ -1,10 +1,15 @@
 <template>
-    <el-col :span="3">
-        <h2 class="mb-2" align="center">微商城</h2>
+    <el-aside width="auto">
         <el-menu default-active="1" class="el-menu-vertical-demo" :collapse="isCollapse" @open="handleOpen"
             @close="handleClose"
-            router="true">
-            <el-menu-item index="/coupon">
+            router="true"  >
+            <el-menu-item>
+                <el-icon>
+                    <ShoppingCart />
+                </el-icon>
+                <span style="font-weight: bolder;font-size: 20px;">微商城</span>
+            </el-menu-item>
+            <el-menu-item index="/coupon" >
                     <el-icon>
                         <coin />
                     </el-icon>
@@ -27,10 +32,10 @@
                 <span>促销商品分类</span>
             </el-menu-item>
         </el-menu>
-    </el-col>
+    </el-aside>
     <!--main-->
     <el-main>
-        <el-menu :default-active="1" class="el-menu-demo" mode="horizontal" :ellipsis="false" @select="handleSelect">
+        <el-menu :default-active="1" class="el-menu-demo" mode="horizontal" :ellipsis="false" @select="handleSelect" >
             <el-menu-item index="0">
                 <el-icon :size="60" @click="collapse()">
                     <component :is="icon" />
