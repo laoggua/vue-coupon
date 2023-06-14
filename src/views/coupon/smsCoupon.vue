@@ -1,8 +1,6 @@
 <template>
     <div style="margin:0 20px">
         <h2>优惠券列表</h2>
-        <el-input v-model="searchText" placeholder="请输入搜索关键字" clearable @clear="clearSearch" @keyup.enter="performSearch"
-            style="margin-bottom: 30px"></el-input>
         <div>
             <el-button type="primary" @click="showDialog()">添加</el-button>
         </div>
